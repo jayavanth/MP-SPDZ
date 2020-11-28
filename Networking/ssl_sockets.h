@@ -21,7 +21,7 @@ class ssl_ctx : public boost::asio::ssl::context
 {
 public:
     ssl_ctx(string me) :
-            boost::asio::ssl::context(boost::asio::ssl::context::sslv23)
+            boost::asio::ssl::context(boost::asio::ssl::context::tlsv12)
     {
         string prefix = PREP_DIR + me;
         string cert_file = prefix + ".pem";
