@@ -25,8 +25,7 @@ USE_GF2N_LONG = 1
 # BMI2 is used to optimize multiplication modulo a prime
 # ADX is used to optimize big integer additions
 # delete the second line to compile for a platform that supports everything
-ARCH = -mtune=native -msse4.1 -msse4.2 -maes -mpclmul -mavx -mavx2 -mbmi2 -madx
-ARCH = -march=native
+ARCH = -march=core2
 
 # allow to set compiler in CONFIG.mine
 CXX = g++
