@@ -87,7 +87,7 @@ spdz2k: spdz2k-party.x ot-offline.x Check-Offline-Z2k.x galois-degree.x Fake-Off
 mascot: mascot-party.x spdz2k mama-party.x
 
 tldr:
-	-echo ARCH = -march=native >> CONFIG.mine
+	-echo ARCH = -march=core2 >> CONFIG.mine
 	$(MAKE) mascot-party.x
 
 ifeq ($(OS), Darwin)
